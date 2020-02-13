@@ -1,0 +1,23 @@
+
+def want_a_clue():
+    test=input('Do you want a clue?')
+    if game!=secret_word and test==Yes:
+        print('You can play music with it')
+    else:
+        print('Ok, keep guessing!')
+
+while attempt_count <5:
+    attempt_count+=1
+    if game!=secret_word:
+        if game not in secret_word:
+            print('This letter is not in the secret word')
+            want_a_clue
+            game2=input('If you want to keep playing, key in a letter now:')
+        elif game in secret_word:
+            print('Yay, this letter is in the secret word)')
+            print(game)
+    else:
+        print('Wow, you found out the secret word, you are a champ!')
+
+if attempt_count>5:
+    print('You lost, play again tomorrow')
